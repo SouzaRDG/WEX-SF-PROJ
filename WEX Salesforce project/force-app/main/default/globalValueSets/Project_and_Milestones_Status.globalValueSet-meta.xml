@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Complete</fullName>
+        <default>false</default>
+        <label>Complete</label>
+    </customValue>
+    <customValue>
+        <fullName>In Progress</fullName>
+        <default>false</default>
+        <label>In Progress</label>
+    </customValue>
+    <customValue>
+        <fullName>Not Started</fullName>
+        <default>false</default>
+        <label>Not Started</label>
+    </customValue>
+    <description>Shared values for field Status for Project and Project Milestone Objects</description>
+    <masterLabel>Project and Milestones Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>
