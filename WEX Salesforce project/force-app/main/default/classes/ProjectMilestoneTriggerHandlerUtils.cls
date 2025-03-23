@@ -35,6 +35,9 @@ public with sharing class ProjectMilestoneTriggerHandlerUtils {
             projectUpdateList.add(auxProject);
         }
 
+        Set<Project__c> projectSet = new Set<Project__c>(projectUpdateList);
+        projectUpdateList = new List<Project__c>(projectSet);
+
         if(!projectUpdateList.isEmpty()){
             update projectUpdateList;
         }

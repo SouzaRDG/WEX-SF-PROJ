@@ -27,6 +27,9 @@ public with sharing class TaskTriggerHandlerUtils {
             milestonesUpdateList.add(auxMilestone);
         }
 
+        Set<Project_Milestone__c> projectMilestoneSet = new Set<Project_Milestone__c>(milestonesUpdateList);
+        milestonesUpdateList = new List<Project_Milestone__c>(projectMilestoneSet);
+        
         if(!milestonesUpdateList.isEmpty()){
             update milestonesUpdateList;
         }
