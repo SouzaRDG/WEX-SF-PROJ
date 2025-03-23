@@ -27,6 +27,10 @@
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
     <tabSettings>
+        <tab>Project_Creator_Assistant</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+    <tabSettings>
         <tab>Project_Milestone__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
