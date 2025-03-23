@@ -29,6 +29,7 @@
 	<types>
 		<members>Project_Milestone__c</members>
 		<members>Project__c</members>
+		<members>Project_Creator_Assistant</members>
 		<name>CustomTab</name>
 	</types>
 	<types>
