@@ -27,7 +27,6 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Project_Creator_Assistant</members>
 		<members>Project_Milestone__c</members>
 		<members>Project__c</members>
 		<name>CustomTab</name>
@@ -44,6 +43,10 @@
 	<types>
 		<members>projectCreatorAssistant</members>
 		<name>LightningComponentBundle</name>
+	</types>
+	<types>
+		<members>Project_and_Milestones_Permission</members>
+		<name>PermissionSet</name>
 	</types>
 	<version>63.0</version>
 </Package>

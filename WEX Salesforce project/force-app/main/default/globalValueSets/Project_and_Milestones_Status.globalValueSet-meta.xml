@@ -17,5 +17,5 @@
     </customValue>
     <description>Shared values for field Status for Project and Project Milestone Objects</description>
     <masterLabel>Project and Milestones Status</masterLabel>
-    <sorted>true</sorted>
+    <sorted>false</sorted>
 </GlobalValueSet>

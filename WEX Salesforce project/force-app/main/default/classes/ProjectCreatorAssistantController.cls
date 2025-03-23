@@ -1,4 +1,3 @@
-
 public with sharing class ProjectCreatorAssistantController {
     @AuraEnabled
     public static void saveRecords(String data) {
