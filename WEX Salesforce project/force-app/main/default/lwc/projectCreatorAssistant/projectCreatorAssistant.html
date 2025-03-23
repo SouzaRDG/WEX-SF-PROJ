@@ -1,0 +1,31 @@
+<template>
+  <lightning-card title="Project Creator Assistant" icon-name="custom:custom63">
+      <div class="slds-p-around_medium" if:false={isLoading}>
+          <lightning-input label="Project Name" value={projectName} required onchange={handleProjectNameChange}></lightning-input>
+          
+          <template for:each={milestones} for:item="milestone">
+              <div key={milestone.id} class="slds-m-top_medium">
+                  <lightning-input label="Milestone Name" value={milestone.name} required data-id={milestone.id} onchange={handleMilestoneChange}></lightning-input>
+                  
+                  <lightning-button label="Remove Milestone" data-id={milestone.id} onclick={removeMilestone}></lightning-button>
+                  
+                  <template for:each={milestone.tasks} for:item="task">
+                      <div key={task.id} class="slds-m-left_large slds-m-top_small">
+                          <lightning-input label="To-Do" value={task.name} required data-id={task.id} data-milestone-id={milestone.id} onchange={handleTaskChange}></lightning-input>
+                          <lightning-button label="Remove To-Do" data-id={task.id} data-milestone-id={milestone.id} onclick={removeTask}></lightning-button>
+                      </div>
+                  </template>
+                  <lightning-button label="Add To-Do" data-id={milestone.id} onclick={addTask}></lightning-button>
+              </div>
+          </template>
+          
+          <lightning-button label="Add Milestone" onclick={addMilestone}></lightning-button>
+          <lightning-button label="Save Project" variant="brand" onclick={saveProject}></lightning-button>
+      </div>
+      <div class="slds-p-around_medium" if:true={isLoading}>
+          <div class="spinner-container">
+              <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+          </div>
+      </div>
+  </lightning-card>
+</template>
